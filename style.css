@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 110%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* right side */
+.file-maneger {
+  background-color: hsl(228, 56%, 26%);
+  margin-right: 30px;
+  margin-bottom: 3%;
+  border-radius: 10px 100px 10px 10px;
+  padding: 40px 120px 40px 30px;
+  position: relative;
+}
+.file-maneger > img {
+  width: 130px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.file-maneger .file-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.file-buttons button {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: hsl(229, 57%, 11%);
+  margin-left: 10px;
+}
+/* left side */
+.input-card {
+  background-color: hsl(228, 56%, 26%);
+  padding: 30px;
+  border-radius: 10px;
+  color: hsl(243, 100%, 93%);
+  width: 600px;
+  position: relative;
+}
+.input-card .info {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+/* 185 gb pop-up */
+.info-pop {
+  position: absolute;
+  padding: 15px 20px;
+  background-color: white;
+  top: -2.5rem;
+  right: 1rem;
+  border-radius: 10px 10px 0 10px;
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+  font-size: 12px;
+}
+.info-pop .corner {
+  background-color: hsl(228, 56%, 26%);
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-left: 20px solid transparent;
+  border-top: 20px solid white;
+}
+/* input */
+.range {
+  width: 100%;
+  position: relative;
+}
+.range .range-back {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 20px;
+  height: 19px;
+}
+.range .range-front {
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 15px;
+  width: 60%;
+  border-radius: 22px;
+  margin-left: 2px;
+  margin-top: 1.8px;
+  position: absolute;
+  z-index: 4;
+}
+.range .range-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-top: 4px;
+  z-index: 5;
+  position: absolute;
+  background-color: hsl(243, 100%, 93%);
+  left: calc(60% - 11px);
+}
+.gb-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 400;
+}
