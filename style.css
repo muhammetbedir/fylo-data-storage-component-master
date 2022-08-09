@@ -20,7 +20,7 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-/* right side */
+/* left side */
 .file-maneger {
   background-color: hsl(228, 56%, 26%);
   margin-right: 30px;
@@ -48,7 +48,7 @@ body {
   background-color: hsl(229, 57%, 11%);
   margin-left: 10px;
 }
-/* left side */
+/* right side */
 .input-card {
   background-color: hsl(228, 56%, 26%);
   padding: 30px;
@@ -120,4 +120,19 @@ body {
   justify-content: space-between;
   margin-top: 10px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-card {
+    width: 95%;
+  }
+  .file-maneger {
+    width: 95%;
+    margin: 0 0 50px 0;
+  }
 }
